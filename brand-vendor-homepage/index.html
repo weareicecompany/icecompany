@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ALL-IN GROUPBUY | 이제 공동구매는 단순한 할인이 아닙니다</title>
+  <meta name="description" content="트렌드를 이끄는 인플루언서와 제조사를 연결하는 통합형 공동구매 플랫폼. 인플루언서 섭외, 콘텐츠 기획, 주문 풀필먼트, 정밀 성과 분석을 원스톱으로 제공합니다.">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+
+  <!-- Typography: Cormorant Garamond (Serif/Italic) & Plus Jakarta Sans & Pretendard -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,400;1,600;1,700&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+
+  <!-- Main Dark Theme Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="dark-theme">
+
+  <!-- ====================================================================
+       1. Minimalist Top Navigation Bar
+       - Left: Logo | Middle: Simple Links | Right: Single CTA Button
+       ==================================================================== -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      
+      <!-- Left: Logo -->
+      <a href="#hero" class="brand-logo">
+        <span class="brand-logo__img" role="img" aria-label="ICECOMPANY">
+          <img src="images/logo-icon.png" alt="" class="brand-logo__icon">
+          <img src="images/logo-text.png" alt="" class="brand-logo__text">
+        </span>
+      </a>
+
+      <!-- Middle: Simple Menu Links -->
+      <nav class="nav-menu" aria-label="메인 메뉴">
+        <a href="#solutions" class="nav-link">3대 솔루션</a>
+        <a href="#sticky-features" class="nav-link">핵심 기능</a>
+        <a href="#process" class="nav-link">진행 단계</a>
+        <a href="#contact" class="nav-link">상담 문의</a>
+      </nav>
+
+      <!-- Right: Single High-Contrast CTA Button -->
+      <div class="header__action">
+        <a href="#contact" class="btn btn--accent btn--header">공구 상담 신청</a>
+        
+        <!-- Mobile Toggle -->
+        <button class="mobile-toggle" id="mobileToggle" aria-label="메뉴 열기">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Drawer (Dark) -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="mobile-drawer__head">
+      <span class="brand-logo__img brand-logo__img--sm" role="img" aria-label="ICECOMPANY">
+          <img src="images/logo-icon.png" alt="" class="brand-logo__icon">
+          <img src="images/logo-text.png" alt="" class="brand-logo__text">
+        </span>
+      <button class="drawer-close" id="drawerClose">&times;</button>
+    </div>
+    <nav class="mobile-drawer__nav">
+      <a href="#solutions" class="drawer-item">3대 솔루션 (Pillars)</a>
+      <a href="#sticky-features" class="drawer-item">핵심 기능 (Sticky Features)</a>
+      <a href="#process" class="drawer-item">진행 단계 (Process)</a>
+      <a href="#contact" class="drawer-item">상담 문의 (Contact)</a>
+    </nav>
+    <div class="mobile-drawer__foot">
+      <a href="#contact" class="btn btn--accent btn--block">공구 상담 신청</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- ====================================================================
+         SECTION 1: Hero Section (Dark Video Background)
+         - Headline: "이제 공동구매는 단순한 할인이 아닙니다."
+         - Sub-headline: "트렌드를 이끄는 인플루언서와 제조사를 연결하는 통합형 공동구매 플랫폼"
+         - CTAs: "공동구매 서비스 문의" / "셀러 파트너 신청"
+         ==================================================================== -->
+    <section class="hero" id="hero">
+      
+      <!-- Video Background Container (Pexels #7690411 — Asian female smartphone lifestyle) -->
+      <div class="hero__video-wrap">
+        <video autoplay loop muted playsinline preload="auto" class="hero-bg-video" poster="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1920&q=80">
+          <!-- Primary: Pexels #7690411 HD 1080p (confirmed 200 OK) -->
+          <source src="https://videos.pexels.com/video-files/7690411/7690411-hd_1920_1080_25fps.mp4" type="video/mp4">
+          <!-- Fallback: Same clip 720p -->
+          <source src="https://videos.pexels.com/video-files/7690411/7690411-hd_1280_720_25fps.mp4" type="video/mp4">
+          <!-- Safety net: confirmed working beauty series clip -->
+          <source src="https://videos.pexels.com/video-files/3254066/3254066-uhd_2560_1440_25fps.mp4" type="video/mp4">
+        </video>
+        <!-- Deeper Dark Gradient Overlay (Seamless blend into #0F1117) -->
+        <div class="hero__overlay"></div>
+      </div>
+
+      <!-- Hero Main Content -->
+      <div class="container hero__content">
+        <div class="hero__badge">
+          <span class="badge-dot"></span>
+          <span>INTEGRATED <em class="serif-italic">Group Purchase</em> PLATFORM</span>
+        </div>
+
+        <h1 class="hero__headline">
+          이제 공동구매는<br>
+          <span class="text-accent-gradient">단순한 할인</span>이 아닙니다.
+        </h1>
+
+        <p class="hero__subline">
+          트렌드를 이끄는 인플루언서와 제조사를 연결하는 통합형 공동구매 플랫폼.<br class="hidden-mobile">
+          단순 가격 인하가 아닌, 브랜드 가치 상승과 폭발적인 매출 성장을 설계합니다.
+        </p>
+
+        <div class="hero__actions">
+          <a href="#contact" class="btn btn--accent btn--lg glow-effect">공동구매 서비스 문의 &rarr;</a>
+          <a href="#contact" class="btn btn--glass btn--lg">셀러 파트너 신청</a>
+        </div>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <a href="#solutions" class="hero__scroll-hint" aria-label="솔루션으로 스크롤">
+        <span class="scroll-arrow">↓</span>
+      </a>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 2: Core Solutions Section (3 Key Pillars)
+         - 마케팅 솔루션 (Marketing)
+         - 커머스 솔루션 (Commerce)
+         - 파트너십 솔루션 (Partnership)
+         ==================================================================== -->
+    <section class="section solutions" id="solutions">
+      <div class="container">
+        
+        <div class="section-label">
+          <span class="serif-italic text-accent">Core</span> SOLUTIONS
+        </div>
+        <h2 class="section-title">성공적인 공동구매를 위한 3대 핵심 기둥</h2>
+        <p class="section-desc">기획부터 콘텐츠, 안정적인 판매 정산까지 완벽하게 통합된 솔루션을 제공합니다.</p>
+
+        <div class="pillars-grid">
+          
+          <!-- Pillar 1: Marketing Solution -->
+          <article class="pillar-card">
+            <div class="pillar-card__icon-box">
+              <span class="pillar-icon">🎬</span>
+              <span class="pillar-tag">MARKETING</span>
+            </div>
+            <h3 class="pillar-card__title">마케팅 솔루션</h3>
+            <p class="pillar-card__subtitle">Influencer UGC &amp; Brand Trust</p>
+            <p class="pillar-card__desc">
+              진정성 있는 인플루언서가 직접 제품을 사용하고 검증하는 고감도 UGC 콘텐츠를 제작합니다. 단순 바이럴을 넘어 브랜드 신뢰도와 충성 고객층을 단단하게 구축합니다.
+            </p>
+            <ul class="pillar-card__list">
+              <li>✔ 4K 릴스 숏폼 및 피드 비주얼 콘텐츠 기획</li>
+              <li>✔ 인플루언서 스토리 텔링 기반 브랜드 팬덤 형성</li>
+              <li>✔ 공구 종료 후 2차 광고 소재 활용 라이선스 지원</li>
+            </ul>
+          </article>
+
+          <!-- Pillar 2: Commerce Solution -->
+          <article class="pillar-card pillar-card--featured">
+            <div class="pillar-card__icon-box">
+              <span class="pillar-icon">📈</span>
+              <span class="pillar-tag pillar-tag--hot">COMMERCE</span>
+            </div>
+            <h3 class="pillar-card__title">커머스 솔루션</h3>
+            <p class="pillar-card__subtitle">End-to-End Curation &amp; Sales</p>
+            <p class="pillar-card__desc">
+              시장 트렌드와 데이터 분석을 바탕으로 최적의 제품을 큐레이션하고 매력적인 패키지를 설계합니다. 구매 전환율을 극대화하는 상세 기획으로 폭발적인 매출을 이끌어냅니다.
+            </p>
+            <ul class="pillar-card__list">
+              <li>✔ 타깃 고객 맞춤 상품 번들링 및 단독 구성 기획</li>
+              <li>✔ 모바일 결제 최적화 상세페이지 제작 및 오픈</li>
+              <li>✔ 실시간 주문 트래픽 관리 및 품절 프로모션 유도</li>
+            </ul>
+          </article>
+
+          <!-- Pillar 3: Partnership Solution -->
+          <article class="pillar-card">
+            <div class="pillar-card__icon-box">
+              <span class="pillar-icon">🤝</span>
+              <span class="pillar-tag">PARTNERSHIP</span>
+            </div>
+            <h3 class="pillar-card__title">파트너십 솔루션</h3>
+            <p class="pillar-card__subtitle">Stable Profit-Sharing Ecosystem</p>
+            <p class="pillar-card__desc">
+              제조사, 벤더, 인플루언서 모두가 만족하는 투명하고 지속 가능한 수익 쉐어 구조를 확립합니다. 가격 붕괴 없는 철저한 모니터링과 안정적인 정산을 보장합니다.
+            </p>
+            <ul class="pillar-card__list">
+              <li>✔ 브랜드 가치를 보호하는 폐쇄형 가격 통제 시스템</li>
+              <li>✔ 판매 완료 즉시 투명한 성과 분석 및 자동 정산</li>
+              <li>✔ 장기적인 시즌 리오더 및 단독 라인업 파트너십 확장</li>
+            </ul>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 3: Interactive Sticky 2-Column Section (Scrollspy Restored!)
+         - Left Column (Sticky Navigation): Pinned tab buttons
+         - Right Column (Scrollable Cards): Detailed group purchase features
+         ==================================================================== -->
+    <section class="section sticky-features" id="sticky-features">
+      <div class="container">
+        
+        <div class="section-label">
+          <span class="serif-italic text-accent">Group Purchase</span> FEATURES
+        </div>
+        <h2 class="section-title">공동구매 성패를 결정짓는 4대 핵심 인프라</h2>
+        <p class="section-desc">스크롤을 내리며 올인원 공동구매 플랫폼의 상세 운영 시스템을 확인하세요.</p>
+
+        <div class="sticky-layout">
+          
+          <!-- Left Column (Sticky Navigation Menu) -->
+          <aside class="sticky-nav-col">
+            <div class="sticky-nav-card" id="stickyNavCard">
+              <span class="sticky-nav-card__tag">FEATURE NAVIGATOR</span>
+
+              <nav class="sticky-tabs" id="stickyTabs">
+                <button class="sticky-tab active" data-target="gp-influencer">
+                  <span class="sticky-tab__num">01</span>
+                  <div class="sticky-tab__body">
+                    <strong>인플루언서 섭외 &amp; 매칭</strong>
+                    <span>정밀 타깃 3,800+ 크루 풀</span>
+                  </div>
+                </button>
+
+                <button class="sticky-tab" data-target="gp-content">
+                  <span class="sticky-tab__num">02</span>
+                  <div class="sticky-tab__body">
+                    <strong>콘텐츠 기획 &amp; 제작</strong>
+                    <span>4K 릴스 &amp; 바이럴 UGC 화보</span>
+                  </div>
+                </button>
+
+                <button class="sticky-tab" data-target="gp-commerce">
+                  <span class="sticky-tab__num">03</span>
+                  <div class="sticky-tab__body">
+                    <strong>주문 관리 &amp; 풀필먼트</strong>
+                    <span>결제창 개설 &amp; 100% 당일 출고</span>
+                  </div>
+                </button>
+
+                <button class="sticky-tab" data-target="gp-analytics">
+                  <span class="sticky-tab__num">04</span>
+                  <div class="sticky-tab__body">
+                    <strong>성과 분석 &amp; 투명 정산</strong>
+                    <span>실시간 ROAS 리포트 &amp; 정산</span>
+                  </div>
+                </button>
+              </nav>
+
+              <div class="sticky-nav-card__footer">
+                <a href="#contact" class="btn btn--outline-dark btn--block btn--sm">
+                  공동구매 전략 상담 &rarr;
+                </a>
+              </div>
+            </div>
+          </aside>
+
+          <!-- Right Column (Scrollable Detailed Feature Cards) -->
+          <div class="sticky-cards-col" id="stickyCardsCol">
+            
+            <!-- Feature Card 1: Influencer Sourcing -->
+            <article class="sol-card" id="gp-influencer">
+              <div class="sol-card__meta">
+                <span class="sol-card__step">FEATURE 01</span>
+                <span class="sol-card__badge">섭외 자동화</span>
+              </div>
+              <h3 class="sol-card__title">인플루언서 섭외 및 정밀 매칭</h3>
+              <p class="sol-card__desc">
+                단순 팔로워 수만 보는 주먹구구식 섭외는 이제 그만. 뷰티·패션·식품 등 카테고리별 실제 구매 전환율과 과거 공구 이력을 빅데이터로 분석하여 우리 제품과 핏이 100% 일치하는 인플루언서를 매칭합니다.
+              </p>
+              <div class="sol-card__grid">
+                <div class="sol-point">
+                  <div class="sol-point__header">
+                    <span class="point-dot"></span>
+                    <strong>DM 노가다 없는 원클릭 매칭</strong>
+                  </div>
+                  <p>1:1 섭외 DM을 보낼 필요 없이 검증된 3,800+ 크루 풀에서 즉시 캠페인 오픈</p>
+                </div>
+                <div class="sol-point">
+                  <div class="sol-point__header">
+                    <span class="point-dot"></span>
+                    <strong>노쇼 방지 계약 시스템</strong>
+                  </div>
+                  <p>일정 미준수나 중도 이탈을 원천 차단하는 표준 계약 가이드라인 준수</p>
+                </div>
+              </div>
+              <div class="sol-card__stat">
+                <div>
+                  <small>보유 크리에이터 풀</small>
+                  <strong class="text-accent">3,800명+</strong>
+                </div>
+                <div>
+                  <small>평균 매칭 소요 시간</small>
+                  <strong>48시간 이내</strong>
+                </div>
+                <div>
+                  <small>캠페인 참여율</small>
+                  <strong>94.2%</strong>
+                </div>
+              </div>
+            </article>
+
+            <!-- Feature Card 2: Content Production -->
+            <article class="sol-card" id="gp-content">
+              <div class="sol-card__meta">
+                <span class="sol-card__step">FEATURE 02</span>
+                <span class="sol-card__badge">구매 전환 콘텐츠</span>
+              </div>
+              <h3 class="sol-card__title">바이럴 숏폼 &amp; 콘텐츠 기획</h3>
+              <p class="sol-card__desc">
+                공구의 생명은 '사고 싶게 만드는 비주얼'입니다. 인하우스 영상 디렉터와 인플루언서가 협업하여 호기심을 유발하는 릴스 숏폼과 신뢰감을 주는 비포/애프터 테스팅 컷을 제작합니다.
+              </p>
+              <div class="sol-card__grid">
+                <div class="sol-point">
+                  <div class="sol-point__header">
+                    <span class="point-dot"></span>
+                    <strong>4K 고화질 스튜디오 영상</strong>
+                  </div>
+                  <p>음원 트렌드와 인스타 알고리즘을 반영한 10~15초 릴스 숏폼 소스 제공</p>
+                </div>
+                <div class="sol-point">
+                  <div class="sol-point__header">
+                    <span class="point-dot"></span>
+                    <strong>2차 광고 마케팅 라이선스</strong>
+                  </div>
+                  <p>공구 종료 후에도 자사몰이나 메타 광고 소재로 무제한 활용 가능</p>
+                </div>
+              </div>
+              <div class="sol-card__stat">
+                <div>
+                  <small>평균 릴스 조회수</small>
+                  <strong class="text-accent">15만 회+</strong>
+                </div>
+                <div>
+                  <small>콘텐츠 제작 기간</small>
+                  <strong>사전 1주일 완료</strong>
+                </div>
+                <div>
+                  <small>구매 전환 기여율</small>
+                  <strong>68% 이상</strong>
+                </div>
+              </div>
+            </article>
+
+            <!-- Feature Card 3: Commerce & Fulfillment -->
+            <article class="sol-card" id="gp-commerce">
+              <div class="sol-card__meta">
+                <span class="sol-card__step">FEATURE 03</span>
+                <span class="sol-card__badge">원스톱 풀필먼트</span>
+              </div>
+              <h3 class="sol-card__title">주문 관리 &amp; 스마트 풀필먼트</h3>
+              <p class="sol-card__desc">
+                단기간에 주문이 수천 건 몰려도 물류 병목 현상이 없습니다. 모바일 최적화 결제창 개설부터 스마트 풀필먼트 물류 연동을 통해 오후 2시 이전 주문 건은 100% 당일 출고됩니다.
+              </p>
+              <div class="sol-card__grid">
+                <div class="sol-point">
+                  <div class="sol-point__header">
+                    <span class="point-dot"></span>
+                    <strong>모바일 전용 결제창 개설</strong>
+                  </div>
+                  <p>네이버페이, 카카오페이, 토스페이 원클릭 간편결제 완벽 지원</p>
+                </div>
+                <div class="sol-point">
+                  <div class="sol-point__header">
+                    <span class="point-dot"></span>
+                    <strong>불량 및 오배송 100% 책임제</strong>
+                  </div>
+                  <p>철저한 2차 검품과 불량 발생 시 본사 부담 당일 맞교환 보증</p>
+                </div>
+              </div>
+              <div class="sol-card__stat">
+                <div>
+                  <small>당일 출고 준수율</small>
+                  <strong class="text-accent">99.4%</strong>
+                </div>
+                <div>
+                  <small>결제 이탈률</small>
+                  <strong>4.2% 미만</strong>
+                </div>
+                <div>
+                  <small>배송 CS 책임</small>
+                  <strong>본사 전담 케어</strong>
+                </div>
+              </div>
+            </article>
+
+            <!-- Feature Card 4: Analytics & Settlement -->
+            <article class="sol-card" id="gp-analytics">
+              <div class="sol-card__meta">
+                <span class="sol-card__step">FEATURE 04</span>
+                <span class="sol-card__badge">데이터 리포트</span>
+              </div>
+              <h3 class="sol-card__title">성과 분석 &amp; 투명 정산 시스템</h3>
+              <p class="sol-card__desc">
+                얼마나 팔렸는지, 어떤 인플루언서가 가장 높은 수익률(ROAS)을 냈는지 한눈에 파악할 수 있는 실시간 대시보드 리포트를 제공하며, 약속된 날짜에 투명하게 정산됩니다.
+              </p>
+              <div class="sol-card__grid">
+                <div class="sol-point">
+                  <div class="sol-point__header">
+                    <span class="point-dot"></span>
+                    <strong>실시간 판매 대시보드</strong>
+                  </div>
+                  <p>시간대별 유입 트래픽, 객단가, 옵션별 재고 소진율 투명 확인</p>
+                </div>
+                <div class="sol-point">
+                  <div class="sol-point__header">
+                    <span class="point-dot"></span>
+                    <strong>사후 차기 시즌 전략 도출</strong>
+                  </div>
+                  <p>단발성 판매로 끝나지 않고 다음 2차, 3차 리오더를 위한 액션 플랜 제시</p>
+                </div>
+              </div>
+              <div class="sol-card__stat">
+                <div>
+                  <small>평균 캠페인 ROAS</small>
+                  <strong class="text-accent">680%</strong>
+                </div>
+                <div>
+                  <small>정산 소요 기간</small>
+                  <strong>공구 종료 7일 이내</strong>
+                </div>
+                <div>
+                  <small>장기 재계약율</small>
+                  <strong>98.4%</strong>
+                </div>
+              </div>
+            </article>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 4: 6-Step Operation Process (진행 단계)
+         - Step 1. 고객사 미팅 (Client Meeting & Strategy)
+         - Step 2. 가이드 및 레퍼런스 (Direction & Reference)
+         - Step 3. 기획 및 구성 (Storytelling & Planning)
+         - Step 4. 제품 선정 (Product Curation)
+         - Step 5. 콘텐츠 촬영 및 편집 (Content Production)
+         - Step 6. 공동구매 진행 후 분석 (Execution & Data Analysis)
+         ==================================================================== -->
+    <section class="section process" id="process">
+      <div class="container">
+        
+        <div class="section-label">
+          <span class="serif-italic text-accent">Workflow</span> PROCESS
+        </div>
+        <h2 class="section-title">체계적인 6단계 공동구매 운영 프로세스</h2>
+        <p class="section-desc">사전 전략 수립부터 콘텐츠 제작, 정밀 데이터 분석까지 실패 없는 공구를 완성합니다.</p>
+
+        <div class="process-grid">
+          
+          <!-- Step 1 -->
+          <div class="step-card">
+            <div class="step-card__top">
+              <span class="step-badge">STEP 01</span>
+              <span class="step-phase">미팅 &amp; 전략</span>
+            </div>
+            <h3 class="step-card__title">고객사 미팅</h3>
+            <p class="step-card__sub">Client Meeting &amp; Strategy</p>
+            <p class="step-card__desc">
+              브랜드의 강점과 제품 특장점, 목표 매출 규모를 심층 분석하고 최적의 타깃 인플루언서 군을 도출합니다.
+            </p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="step-card">
+            <div class="step-card__top">
+              <span class="step-badge">STEP 02</span>
+              <span class="step-phase">방향성 수립</span>
+            </div>
+            <h3 class="step-card__title">가이드 및 레퍼런스</h3>
+            <p class="step-card__sub">Direction &amp; Reference</p>
+            <p class="step-card__desc">
+              동일 카테고리의 성공 레퍼런스를 제시하고, 인스타그램 피드 톤에 부합하는 명확한 캠페인 가이드를 설정합니다.
+            </p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="step-card">
+            <div class="step-card__top">
+              <span class="step-badge">STEP 03</span>
+              <span class="step-phase">스토리텔링</span>
+            </div>
+            <h3 class="step-card__title">기획 및 구성</h3>
+            <p class="step-card__sub">Storytelling &amp; Planning</p>
+            <p class="step-card__desc">
+              고객이 망설임 없이 구매하도록 유도하는 매력적인 할인 혜택, 단독 사은품 번들링, 한정 수량 구성을 설계합니다.
+            </p>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="step-card">
+            <div class="step-card__top">
+              <span class="step-badge">STEP 04</span>
+              <span class="step-phase">제품 확정</span>
+            </div>
+            <h3 class="step-card__title">제품 선정</h3>
+            <p class="step-card__sub">Product Curation</p>
+            <p class="step-card__desc">
+              인플루언서 본인의 실제 사용 만족도가 가장 높은 메인 아이템을 최종 확정하고 판매 샘플을 조율합니다.
+            </p>
+          </div>
+
+          <!-- Step 5 -->
+          <div class="step-card">
+            <div class="step-card__top">
+              <span class="step-badge">STEP 05</span>
+              <span class="step-phase">크리에이티브</span>
+            </div>
+            <h3 class="step-card__title">콘텐츠 촬영 및 편집</h3>
+            <p class="step-card__sub">Content Production</p>
+            <p class="step-card__desc">
+              공구 오픈 1~2주 전부터 팔로워들의 기대감을 고조시키는 4K 릴스 숏폼과 피드 착장·테스팅 컷을 제작합니다.
+            </p>
+          </div>
+
+          <!-- Step 6 -->
+          <div class="step-card">
+            <div class="step-card__top">
+              <span class="step-badge">STEP 06</span>
+              <span class="step-phase">실행 &amp; 리포트</span>
+            </div>
+            <h3 class="step-card__title">진행 및 데이터 분석</h3>
+            <p class="step-card__sub">Execution &amp; Data Analysis</p>
+            <p class="step-card__desc">
+              실시간 주문 접수 및 당일 출고를 모니터링하며, 판매 종료 후 전환율과 유입 경로를 담은 정산 리포트를 발행합니다.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 5: Minimalist Contact & Footer
+         - Clean contact form for brands/sellers to easily request a group purchase consultation
+         - Transparent Demo Warning Banner
+         - Minimal dark footer
+         ==================================================================== -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        
+        <div class="contact-box">
+          
+          <!-- Requirement: Transparent Demo Banner -->
+          <div class="demo-banner">
+            <span class="demo-banner__badge">💡 안내 (프로토타입 데모)</span>
+            <p class="demo-banner__text">
+              본 홈페이지는 <strong>프론트엔드 포트폴리오 데모</strong>로, 양식을 작성하더라도 <strong>실제 외부 서버나 이메일로 자동 전송되지 않습니다.</strong><br>
+              현재 즉시 공동구매 상담을 원하실 경우 하단의 <strong>카카오톡 실시간 상담</strong> 또는 <strong>인스타그램 DM</strong>을 이용해 주시기 바랍니다.
+            </p>
+          </div>
+
+          <div class="contact-header">
+            <span class="contact-header__tag">CONSULTATION</span>
+            <h2 class="contact-title">공동구매 제휴 및 서비스 문의</h2>
+            <p class="contact-desc">제조사, 브랜드사, 인플루언서 모두 환영합니다. 간단한 정보만 남겨주시면 담당 매니저가 24시간 내 회신드립니다.</p>
+          </div>
+
+          <!-- Simple Contact Form (Dark Inputs) -->
+          <form id="simpleInquiryForm" class="simple-form" novalidate>
+            
+            <!-- Role Toggle -->
+            <div class="role-selector">
+              <button type="button" class="role-btn active" data-role="brand">제조사 / 브랜드사 문의</button>
+              <button type="button" class="role-btn" data-role="influencer">인플루언서 / 셀러 신청</button>
+            </div>
+            <input type="hidden" id="inquiryRole" value="brand">
+
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label for="contactName" class="form-label">성함 / 담당자명 <span class="req">*</span></label>
+                <input type="text" id="contactName" class="form-input" placeholder="홍길동" required>
+              </div>
+              <div class="form-group">
+                <label for="contactPhone" class="form-label">연락처 <span class="req">*</span></label>
+                <input type="tel" id="contactPhone" class="form-input" placeholder="010-0000-0000" required>
+              </div>
+            </div>
+
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label for="brandName" class="form-label" id="brandLabel">브랜드명 / 제조사명 <span class="req">*</span></label>
+                <input type="text" id="brandName" class="form-input" placeholder="예: 아틀리에 코스메틱" required>
+              </div>
+              <div class="form-group">
+                <label for="instaAccount" class="form-label">인스타그램 계정 (@) <span class="req">*</span></label>
+                <input type="text" id="instaAccount" class="form-input" placeholder="예: @brand_official" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="contactEmail" class="form-label">이메일 주소 <span class="req">*</span></label>
+              <input type="email" id="contactEmail" class="form-input" placeholder="partner@yourbrand.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="inquiryText" class="form-label">문의 내용 및 취급 품목</label>
+              <textarea id="inquiryText" rows="3" class="form-textarea" placeholder="공동구매를 희망하시는 주요 제품군(뷰티/패션/식품/라이프 등)과 예상 판매 일정을 자유롭게 남겨주세요."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--accent btn--block btn--submit glow-effect">
+              공동구매 상담 신청하기 (시뮬레이션) &rarr;
+            </button>
+          </form>
+
+          <!-- Direct Channels -->
+          <div class="direct-channels">
+            <a href="https://open.kakao.com" target="_blank" rel="noopener noreferrer" class="channel-pill channel-pill--kakao">
+              💬 카카오톡 1:1 상담 ↗
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="channel-pill channel-pill--dark">
+              📷 인스타그램 공식 DM ↗
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Minimal Dark Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="brand-logo__img brand-logo__img--sm" role="img" aria-label="ICECOMPANY">
+          <img src="images/logo-icon.png" alt="" class="brand-logo__icon">
+          <img src="images/logo-text.png" alt="" class="brand-logo__text">
+        </span>
+        <p class="footer__copy">© 2025 ALL-IN GROUPBUY Inc. All rights reserved.</p>
+      </div>
+      <div class="footer__links">
+        <a href="#solutions">3대 솔루션</a>
+        <a href="#sticky-features">핵심 기능</a>
+        <a href="#process">진행 단계</a>
+        <a href="#contact">상담 문의</a>
+        <a href="#">이용약관</a>
+        <a href="#">개인정보처리방침</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Honest Demo Notice Modal (Dark Elevated Glass Dialog) -->
+  <div class="modal" id="demoNoticeModal" aria-hidden="true" role="dialog">
+    <div class="modal-backdrop" id="demoBackdrop"></div>
+    <div class="modal-dialog">
+      <button class="modal-close" id="demoCloseBtn">&times;</button>
+      <div class="modal-content-box">
+        <div class="modal-icon">📢</div>
+        <h3 class="modal-title">데모 버전 안내 (서버 미전송)</h3>
+        <p class="modal-desc">
+          작성해 주신 내용을 성공적으로 확인했습니다!<br>
+          <strong>현재 이 홈페이지는 프론트엔드 포트폴리오 데모로, 실제 외부 서버나 이메일로 전송되지 않습니다.</strong>
+        </p>
+
+        <div class="modal-summary" id="modalSummary">
+          <!-- JS 렌더링 -->
+        </div>
+
+        <div class="modal-guide">
+          ✦ <strong>실제 1:1 공동구매 제휴를 원하신다면?</strong><br>
+          위 내용을 카카오톡 채널 또는 인스타그램 DM으로 보내주시면 담당 매니저가 즉시 회신드립니다!
+        </div>
+
+        <div class="modal-actions">
+          <a href="https://open.kakao.com" target="_blank" rel="noopener noreferrer" class="btn btn--accent btn--block">
+            카카오톡 상담으로 이동 ↗
+          </a>
+          <button class="btn btn--glass btn--block" id="modalConfirmBtn">창 닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast" role="alert" aria-live="polite"></div>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>
